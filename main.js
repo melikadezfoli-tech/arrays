@@ -82,12 +82,25 @@ console.log(numMayores(numvarios, 50));
 
 //15. Obtener el primer elemento que cumple una condición
 //Enunciado: Dado un array de números y un valor, encuentra el primer número que sea mayor al valor dado.
-
+let numMayor = numvarios.find(function(num){
+    return(num>90)
+});
+console.log (numMayor);
 //16. Imprimir cada elemento del array
 //Enunciado: Dado un array de números, recorre el array e imprime cada uno de sus elementos en la consola.
+numvarios.forEach(function(num){
+    console.log(num)
+});
 
 //17. Crear un array con el doble de cada número
 //Enunciado: Dado un array de números, genera un nuevo array en el que cada número sea el doble de su valor original.
-
+let dobleNum=numvarios.forEach(function(num){
+    console.log(num*2)
+})
 //18. Convertir un array de nombres en mayúsculas
 //Enunciado: Dado un array de nombres (strings), genera un nuevo array donde cada nombre esté en mayúsculas.
+let nombres=["ana", "pepe", "pedro","juan","maria"];
+let mayusculas=nombres.map(function(nom){
+    return nom.toUpperCase()
+});
+console.log(mayusculas);
